@@ -1,18 +1,24 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Layout from "./components/Layout";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import Register from "./pages/Auth/Register.js";
+import Login from "./pages/Auth/Login.js";
+import Pagenotfound from "./pages/Pagenotfound";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Layout />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<Pagenotfound />} />
+      </Routes>
+    </>
   );
 }
 
