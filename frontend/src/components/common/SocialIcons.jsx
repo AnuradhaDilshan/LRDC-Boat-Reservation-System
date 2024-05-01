@@ -8,11 +8,15 @@ export default function SocialIcons() {
       <div className="col-lg-3 px-5">
         <div className="d-inline-flex align-items-center py-2">
           {socialIcons.map((val, index) => (
-            <div key={index}>
-              <Link className="me-3" href="">
-                {val.icon}
-              </Link>
-            </div>
+            <a
+              key={index}
+              href={val.url}
+              className="me-3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {val.icon}
+            </a>
           ))}
         </div>
       </div>

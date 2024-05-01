@@ -1,0 +1,20 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 10px;
+}
+
+.booking-form input,
+.booking-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.booking-form button {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -13,7 +13,11 @@ export default function Book() {
               <div className="col-md-10">
                 <div className="row g-2">
                   <div className="col-md-3">
-                    <div className="date" id="date1" data-target-input="nearest">
+                    <div
+                      className="date"
+                      id="date1"
+                      data-target-input="nearest"
+                    >
                       <input
                         type="text"
                         className="form-control datetimepicker-input"
@@ -24,7 +28,11 @@ export default function Book() {
                     </div>
                   </div>
                   <div className="col-md-3">
-                    <div className="date" id="date2" data-target-input="nearest">
+                    <div
+                      className="date"
+                      id="date2"
+                      data-target-input="nearest"
+                    >
                       <input
                         type="text"
                         className="form-control datetimepicker-input"

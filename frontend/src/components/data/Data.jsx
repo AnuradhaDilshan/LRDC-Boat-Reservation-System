@@ -47,21 +47,27 @@ export const navList = [
     text: "Contact",
   },
 ];
+
 export const socialIcons = [
   {
     icon: <i className="fab fa-facebook-f"></i>,
+    url: "https://www.facebook.com/LRDCservices",
   },
   {
     icon: <i className="fab fa-twitter"></i>,
+    url: "https://www.twitter.com/lrdcserv",
   },
   {
     icon: <i className="fab fa-instagram"></i>,
+    url: "https://www.instagram.com/lrdc.services/",
   },
   {
     icon: <i className="fab fa-linkedin-in"></i>,
+    url: "https://www.facebook.com/LRDCservices",
   },
   {
     icon: <i className="fab fa-youtube"></i>,
+    url: "https://www.youtube.com/channel/UC2mc_wj1bNlYUasVnQBFAgw",
   },
 ];
 
@@ -70,15 +76,13 @@ export const carouselData = [
     img: "../assets/img/carousel-1.jpg",
     title: "Discover A Brand Luxurious Hotel",
     subtitle: "luxury living",
-    btn1: "Our Room",
-    btn2: "Book Room",
+    btn1: "BOOK NOW",
   },
   {
     img: "../assets/img/carousel-2.jpg",
     title: "Discover A Brand Luxurious Hotel",
     subtitle: "luxury living",
-    btn1: "Our Room",
-    btn2: "Book Room",
+    btn1: "BOOK NOW",
   },
 ];
 export const about = [
@@ -266,44 +270,43 @@ export const testimonial = [
   },
 ];
 
-export const roomItems = [
+export const boatItems1 = [
   {
-    img: "../assets/img/room-1.jpg",
-    price: "$110/night",
-    name: "Junior Suit",
+    img: "../assets/img/boat-1.jpg",
+    price: "LKR 3,500",
+    name: "Junior Ride",
     star: [
-      <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
     ],
     description:
-      "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.",
-    yellowbtn: "View Detail",
+      "Junior Ride offers an unforgettable adventure tailored for young explorers and their families. It's designed to be fun and safe for all ages.",
+    yellowbtn: "View details",
     darkbtn: "book now",
   },
 
   {
-    img: "../assets/img/room-2.jpg",
-    price: "$110/night",
-    name: "Executive Suite",
+    img: "../assets/img/boat-2.jpg",
+    price: "LKR 7,500",
+    name: "Premier Ride",
     star: [
-      <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
     ],
     description:
-      "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.",
-    yellowbtn: "View Detail",
+      "Premier Ride invites discerning guests to indulge in a luxurious maritime experience tailored for utmost comfort and exclusivity.",
+    yellowbtn: "View details",
     darkbtn: "book now",
   },
+
   {
-    img: "../assets/img/room-3.jpg",
-    price: "$110/night",
-    name: "Super Deluxe",
+    img: "../assets/img/boat-3.jpg",
+    price: "LKR 10,000",
+    name: "Deluxe Ride",
     star: [
       <small class="fa fa-star text-primary"></small>,
       <small class="fa fa-star text-primary"></small>,
@@ -312,25 +315,153 @@ export const roomItems = [
       <small class="fa fa-star text-primary"></small>,
     ],
     description:
-      "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.",
-    yellowbtn: "View Detail",
+      "Deluxe Ride offers a vibrant escape perfect for enjoyment by people of all ages, ensuring a fun-filled yet secure outing for families.",
+    yellowbtn: "View details",
     darkbtn: "book now",
   },
 ];
 
-export const facility = [
+export const boatItems2 = [
   {
-    icon: <i class="fa fa-bed text-primary me-2"></i>,
-    quantity: 3,
-    facility: "bed",
+    img: "../assets/img/boat-4.jpg",
+    price: "LKR 15,000",
+    name: "WeekDay Ride",
+    star: [
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+    ],
+    description:
+      "Discover the joy of the open water during the week, designed specifically for those who prefer a daily working, more busy peoples.",
+    yellowbtn: "View details",
+    darkbtn: "book now",
   },
+
   {
-    icon: <i class="fa fa-bath text-primary me-2"></i>,
-    quantity: 2,
-    facility: "bath",
+    img: "../assets/img/boat-5.jpg",
+    price: "LKR 30,000",
+    name: "WeekEnd Ride",
+    star: [
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+    ],
+    description:
+      "Make your weekends unforgettable, designed for thrill-seekers and leisure lovers alike. This vibrant escape is perfect for families, friends.",
+    yellowbtn: "View details",
+    darkbtn: "book now",
   },
+
   {
-    icon: <i class="fa fa-wifi text-primary me-2"></i>,
-    facility: "Wifi",
+    img: "../assets/img/boat-6.jpg",
+    price: "LKR 10,000",
+    name: "AlongSide Ride",
+    star: [
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+      <small class="fa fa-star text-primary"></small>,
+    ],
+    description:
+      "Turn the water into your party playground, specially designed for celebrations of all kinds. Whether you're hosting a fun gathering.",
+    yellowbtn: "View details",
+    darkbtn: "book now",
   },
+];
+
+export const facility_Tours = [
+  [
+    {
+      icon: <i class="fa-solid fa-user text-primary me-2"></i>,
+      quantity: 5,
+      facility: "Min",
+    },
+    {
+      quantity: 12,
+      facility: "Max",
+    },
+    {
+      icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
+      facility: "30 min",
+    },
+  ],
+  [
+    {
+      icon: <i class="fa-solid fa-user text-primary me-2"></i>,
+      quantity: 7,
+      facility: "Min",
+    },
+    {
+      quantity: 12,
+      facility: "Max",
+    },
+    {
+      icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
+      facility: "45 min",
+    },
+  ],
+  [
+    {
+      icon: <i class="fa-solid fa-user text-primary me-2"></i>,
+      quantity: 7,
+      facility: "Min",
+    },
+    {
+      quantity: 12,
+      facility: "Max",
+    },
+    {
+      icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
+      facility: "1 h",
+    },
+  ],
+];
+
+export const facility_Diyathma = [
+  [
+    {
+      icon: <i class="fa-solid fa-user text-primary me-2"></i>,
+      quantity: 30,
+      facility: "Passengers",
+    },
+    {
+      icon: <i class="fa-solid fa-wind text-primary me-2"></i>,
+      facility: "A / C",
+    },
+    {
+      icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
+      facility: "1 h",
+    },
+  ],
+  [
+    {
+      icon: <i class="fa-solid fa-user text-primary me-2"></i>,
+      quantity: 30,
+      facility: "Passengers",
+    },
+    {
+      icon: <i class="fa-solid fa-wind text-primary me-2"></i>,
+      facility: "A / C",
+    },
+    {
+      icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
+      facility: "1 h",
+    },
+  ],
+  [
+    {
+      icon: <i class="fa-solid fa-user text-primary me-2"></i>,
+      quantity: 30,
+      facility: "Passengers",
+    },
+    {
+      icon: <i class="fa-solid fa-wind text-primary me-2"></i>,
+      facility: "A / C",
+    },
+  ],
 ];

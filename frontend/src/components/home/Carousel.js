@@ -25,6 +25,8 @@ export default function Carousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
   return (
     <>
@@ -48,16 +50,11 @@ export default function Carousel() {
                         {val.title}
                       </h1>
                       <a
-                        href=""
+                        style={{ fontSize: "1.3rem", fontWeight: "bold" }}
+                        href="/booking"
                         className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                       >
                         {val.btn1}
-                      </a>
-                      <a
-                        href=""
-                        className="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                      >
-                        {val.btn2}
                       </a>
                     </div>
                   </div>
