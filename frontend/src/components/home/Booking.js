@@ -185,7 +185,7 @@ export default function Booking() {
       <div className="container">
         <div className="border p-5">
           <form onSubmit={handleSubmit} className="booking-form">
-            <div className="p-lg-1 text-center bg-primary text-white mb-4">
+            <div className="p-lg-1 text-center bg-dark text-white mb-4">
               Choosed Package: {formData.package} -{" "}
               {formData.ride || "Select a valid package"}
             </div>
