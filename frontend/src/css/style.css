@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+/* ----------------ROOT CSS----------------- */
 :root {
   --primary: #fea116;
   --light: #f1f8ff;
@@ -21,7 +21,7 @@
   z-index: 99;
 }
 
-/*** Spinner ***/
+/* ----------------SPINNER----------------- */
 #spinner {
   opacity: 0;
   visibility: hidden;
@@ -35,7 +35,7 @@
   opacity: 1;
 }
 
-/*** Button ***/
+/* ----------------BUTTON----------------- */
 .btn {
   font-weight: 500;
   text-transform: uppercase;
@@ -95,7 +95,7 @@
   }
 }
 
-/*** Header ***/
+/* ----------------HEADER----------------- */
 .carousel-caption {
   top: 0;
   left: 0;
@@ -150,7 +150,7 @@
   z-index: 1;
 }
 
-/*** Section Title ***/
+/* ----------------SECTION TITLE----------------- */
 .section-title {
   position: relative;
   display: inline-block;
@@ -183,7 +183,7 @@
   display: none;
 }
 
-/*** Service ***/
+/* ----------------SERVICE----------------- */
 .service-item {
   height: 320px;
   padding: 30px;
@@ -219,13 +219,13 @@
   color: #ffffff !important;
 }
 
-/*** Youtube Video ***/
+/* ----------------VIDEO----------------- */
 .video {
   position: relative;
   height: 100%;
   min-height: 500px;
   background: linear-gradient(rgba(15, 23, 43, 0.1), rgba(15, 23, 43, 0.1)),
-    url(../../public/assets/img/video.jpg);
+    url();
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,7 +337,7 @@
   opacity: 1;
 }
 
-/*** Testimonial ***/
+/* ----------------TESTIMONIAL----------------- */
 .testimonial {
   background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)),
     url(../../public/assets/img/carousel-2.jpg);
@@ -387,7 +387,7 @@
   background: #ffffff;
 }
 
-/*** Team ***/
+/* ----------------TEAM----------------- */
 .team-item,
 .team-item .bg-primary,
 .team-item .bg-primary i {
@@ -406,7 +406,7 @@
   color: var(--secondary) !important;
 }
 
-/*** Footer ***/
+/* ----------------FOOTER----------------- */
 .newsletter {
   position: relative;
   z-index: 1;
@@ -480,4 +480,17 @@
   margin-right: 0;
   padding-right: 0;
   border-right: none;
+}
+
+/* ----------------CUSTOM SCROLLBAR----------------- */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 20px;
 }

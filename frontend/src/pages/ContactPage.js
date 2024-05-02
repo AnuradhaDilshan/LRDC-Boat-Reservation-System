@@ -34,7 +34,7 @@ export default function Contact() {
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
               <iframe
                 class="position-relative rounded w-100 h-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9649797774214!2d79.88009478398875!3d6.894792400975145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a28bce868a3%3A0x5a2b51a8fc490e66!2sLRDC%20Services%20(Private)%20Limited!5e0!3m2!1sen!2slk!4v1714600591456!5m2!1sen!2slk"
                 frameborder="0"
                 style={{ minHeight: "350px", border: "0" }}
                 allowfullscreen=""

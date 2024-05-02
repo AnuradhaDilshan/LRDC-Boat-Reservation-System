@@ -51,7 +51,7 @@ export default function Carousel() {
                       </h1>
                       <a
                         style={{ fontSize: "1.3rem", fontWeight: "bold" }}
-                        href="/booking"
+                        href="/boat-rides"
                         className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                       >
                         {val.btn1}

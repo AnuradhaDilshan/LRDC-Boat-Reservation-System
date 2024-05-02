@@ -12,14 +12,20 @@ export default function About() {
               <h6 className="section-title text-start text-primary text-uppercase">
                 About Us
               </h6>
-              <h1 className="mb-4">
+              <h2 className="mb-4">
                 Welcome to{" "}
-                <span className="text-primary text-uppercase">Hotelier</span>
-              </h1>
+                <span className="text-primary text-uppercase">
+                  LRDC Boat Service
+                </span>
+              </h2>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
+                The "LRDC Boat Service," initiated by President Gotabhaya
+                Rajapaksa, offers a new transport option through Colombo's
+                canals to avoid city traffic. The service runs from Wellawatte
+                to Battaramulla in just 20 minutes with stops at Havelock Town
+                and near the Open University of Sri Lanka. Operated by retired
+                Navy personnel, the service prioritizes safety and hygiene,
+                especially considering Covid-19 precautions.
               </p>
               <div className="row g-3 pb-4">
                 {about.map((item, key) => (
@@ -36,7 +42,7 @@ export default function About() {
                   </div>
                 ))}
               </div>
-              <a className="btn btn-primary py-3 px-5 mt-2" href="">
+              <a className="btn btn-primary py-3 px-5 mt-2" href="/boat-rides">
                 Explore More
               </a>
             </div>

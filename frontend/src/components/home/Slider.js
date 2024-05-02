@@ -20,7 +20,7 @@ export default function Sliders() {
         data-wow-delay="0.1s"
       >
         <div className="container">
-          <div className="owl-carousel testimonial-carousel py-5">
+          <div className="owl-carousel testimonial-carousel py-4">
             <Slider {...settings}>
               {testimonial.map((item, key) => (
                 <div

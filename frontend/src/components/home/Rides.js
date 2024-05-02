@@ -1,13 +1,8 @@
 import React from "react";
 import CommonHeading from "../common/CommonHeading";
-import {
-  facility_Tours,
-  facility_Diyathma,
-  boatItems1,
-  boatItems2,
-} from "../data/Data";
+import { Leisure_Tours, Diyathma, boatItems1, boatItems2 } from "../data/Data";
 
-export default function Rooms() {
+export default function Rides() {
   return (
     <>
       <div className="container-xxl py-5">
@@ -51,7 +46,7 @@ export default function Rooms() {
                           <div className="ps-2">{item.star}</div>
                         </div>
                         <div className="d-flex mb-3">
-                          {facility_Tours[key % facility_Tours.length].map(
+                          {Leisure_Tours[key % Leisure_Tours.length].map(
                             (item, index) => (
                               <small
                                 key={index}
@@ -73,7 +68,7 @@ export default function Rooms() {
                           </a>
                           <a
                             className="btn btn-sm btn-dark rounded py-2 px-4"
-                            href="/booking"
+                            href={`/booking/Leisure_Tours/${key}`}
                           >
                             {item.darkbtn}
                           </a>
@@ -120,7 +115,7 @@ export default function Rooms() {
                           <div className="ps-2">{item.star}</div>
                         </div>
                         <div className="d-flex mb-3">
-                          {facility_Diyathma[key % facility_Tours.length].map(
+                          {Diyathma[key % Diyathma.length].map(
                             (item, index) => (
                               <small
                                 key={index}
@@ -142,7 +137,7 @@ export default function Rooms() {
                           </a>
                           <a
                             className="btn btn-sm btn-dark rounded py-2 px-4"
-                            href="/booking"
+                            href={`/booking/Diyathma/${key}`}
                           >
                             {item.darkbtn}
                           </a>

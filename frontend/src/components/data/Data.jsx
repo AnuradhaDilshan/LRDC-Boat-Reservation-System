@@ -4,11 +4,13 @@ export const navList = [
     path: "/",
     text: "Home",
   },
+
   {
     id: 2,
-    path: "/about",
-    text: "About",
+    path: "/boat-rides",
+    text: "Boat Rides",
   },
+
   {
     id: 3,
     path: "/services",
@@ -16,33 +18,33 @@ export const navList = [
   },
   {
     id: 4,
-    path: "/rooms",
-    text: "Rooms",
+    path: "/about",
+    text: "About",
   },
+  // {
+  //   id: 5,
+  //   path: "/page",
+  //   text: "Page",
+  //   subItems: [
+  //     {
+  //       id: 51,
+  //       path: "/booking",
+  //       text: "Booking",
+  //     },
+  //     {
+  //       id: 52,
+  //       path: "/team",
+  //       text: "Our Team",
+  //     },
+  //     {
+  //       id: 53,
+  //       path: "/testimonial",
+  //       text: "Testimonial",
+  //     },
+  //   ],
+  // },
   {
     id: 5,
-    path: "/page",
-    text: "Page",
-    subItems: [
-      {
-        id: 51,
-        path: "/booking",
-        text: "Booking",
-      },
-      {
-        id: 52,
-        path: "/team",
-        text: "Our Team",
-      },
-      {
-        id: 53,
-        path: "/testimonial",
-        text: "Testimonial",
-      },
-    ],
-  },
-  {
-    id: 6,
     path: "/contact",
     text: "Contact",
   },
@@ -74,89 +76,80 @@ export const socialIcons = [
 export const carouselData = [
   {
     img: "../assets/img/carousel-1.jpg",
-    title: "Discover A Brand Luxurious Hotel",
-    subtitle: "luxury living",
+    title: "Time Efficient and Safe Boat Ride",
+    subtitle: "safe boat riding",
     btn1: "BOOK NOW",
   },
   {
     img: "../assets/img/carousel-2.jpg",
-    title: "Discover A Brand Luxurious Hotel",
-    subtitle: "luxury living",
+    title: "Enjoy the Ultimate Party Vibes",
+    subtitle: "enjoy boat riding",
+    btn1: "BOOK NOW",
+  },
+  {
+    img: "../assets/img/carousel-3.jpg",
+    title: "Discover A Brand Luxurious Boat Ride",
+    subtitle: "luxury boat riding",
     btn1: "BOOK NOW",
   },
 ];
+
 export const about = [
   {
-    icon: <i class="fa fa-hotel fa-2x text-primary mb-2"></i>,
-    text: "Rooms",
-    count: "7861",
-  },
-  {
-    icon: <i class="fa fa-users fa-2x text-primary mb-2"></i>,
-    text: "Staffs",
-    count: "1234",
+    icon: <i class="fa-solid fa-ship fa-2x text-primary mb-2"></i>,
+    text: "Boats",
+    count: "10+",
   },
   {
     icon: <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>,
-    text: "Clients",
-    count: "4321",
+    text: "Staff",
+    count: "25+",
+  },
+  {
+    icon: <i class="fa fa-users fa-2x text-primary mb-2"></i>,
+    text: "Passengers",
+    count: "2600+",
   },
 ];
 
 export const services = [
   {
-    icon: <i class="fa fa-hotel fa-2x text-primary"></i>,
-    name: "Rooms & Appartment",
-    discription: "Contrary to popular belief, ipsum is not simply random.",
+    icon: <i class="fa-solid fa-ship fa-2x text-primary"></i>,
+    name: "Passenger Boat Service",
+    discription:
+      "Our Passenger Boat Service provides a fast and scenic commute across city waterways, offering a pleasant and efficient alternative to road traffic.",
   },
   {
     icon: <i class="fa fa-utensils fa-2x text-primary"></i>,
     name: "Food & Restaurant",
-    discription: "Contrary to popular belief, ipsum is not simply random.",
+    discription:
+      "Our boat service features a buffet with a variety of fresh options, catering to all tastes and dietary needs in a scenic, relaxed setting.",
   },
   {
-    icon: <i class="fa fa-spa fa-2x text-primary"></i>,
-    name: "Spa & Fitness",
-    discription: "Contrary to popular belief, ipsum is not simply random.",
+    icon: <i class="fa-solid fa-ferry fa-2x text-primary"></i>,
+    name: "Luxury and Adventure Cruises",
+    discription:
+      "Our Luxury Cruises offer opulent amenities and personal service, while our Adventure Cruises provide thrilling activities.",
   },
 
   {
     icon: <i class="fa fa-swimmer fa-2x text-primary"></i>,
-    name: "Sports & Gaming",
-    discription: "Contrary to popular belief, ipsum is not simply random.",
+    name: "Sports & Games",
+    discription:
+      "Our boat service enhances the journey with onboard sports and games, perfect for entertainment and socializing on the water.",
   },
   {
     icon: <i class="fa fa-glass-cheers fa-2x text-primary"></i>,
     name: "Event & Party",
-    discription: "Contrary to popular belief, ipsum is not simply random.",
+    discription:
+      "Our boat service provides a unique setting for events and parties, complete with customizable catering and entertainment.",
   },
 
   {
-    icon: <i class="fa fa-dumbbell fa-2x text-primary"></i>,
-    name: "GYM & Yoga",
-    discription: "Contrary to popular belief, ipsum is not simply random.",
-  },
-];
-export const team = [
-  {
-    image: "../assets/img/team-1.jpg",
-    name: "Full Name",
-    designation: "Designation",
-  },
-  {
-    image: "../assets/img/team-2.jpg",
-    name: "Full Name",
-    designation: "Designation",
-  },
-  {
-    image: "../assets/img/team-3.jpg",
-    name: "Full Name",
-    designation: "Designation",
-  },
-  {
-    image: "../assets/img/team-3.jpg",
-    name: "Full Name",
-    designation: "Designation",
+    icon: <i class="fa-solid fa-medal fa-2x text-primary"></i>,
+    name: "Fun Activities",
+    discription:
+      "Our boat service enhances trips with fun activities like live music and themed parties, creating memorable experiences on the water.",
   },
 ];
 
@@ -175,7 +168,7 @@ export const footerItem = [
         name: "Privacy Policy",
       },
       {
-        name: "Terms & Condition",
+        name: "Careers",
       },
       {
         name: "Support",
@@ -187,19 +180,16 @@ export const footerItem = [
     header: "Services",
     UnitItem: [
       {
-        name: "Food & Restaurant",
+        name: "Civil Security Guards",
       },
       {
-        name: "Spa & Fitness",
+        name: "CCTV Security Solutions",
       },
       {
-        name: "Sports & Gaming",
+        name: "Manpower Support Service",
       },
       {
-        name: "Event & Party",
-      },
-      {
-        name: "GYM & Yoga",
+        name: "Boat Passenger Service",
       },
     ],
   },
@@ -208,15 +198,15 @@ export const footerItem = [
 export const footerContact = [
   {
     icon: <i className="fa fa-map-marker-alt me-3"></i>,
-    name: "123 Street, New York, USA",
+    name: "No: 28/10, Kirimandala Mw., Nawala, Rajagiriya.",
   },
   {
     icon: <i className="fa fa-phone-alt me-3"></i>,
-    name: "+012 345 67890",
+    name: "(+94) 112 861 948",
   },
   {
     icon: <i className="fa fa-envelope me-3"></i>,
-    name: "info@example.com",
+    name: "info@lrdcservices.lk",
   },
 ];
 
@@ -224,25 +214,26 @@ export const contact = [
   {
     icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
     title: "Booking",
-    email: "book@example.com",
+    email: "ride@lrdcservices.lk",
   },
   {
     icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
     title: "Technical",
-    email: "tech@example.com",
+    email: "tech@lrdcservices.lk",
   },
   {
     icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
     title: "General",
-    email: "info@example.com",
+    email: "info@lrdcservices.lk",
   },
 ];
+
 export const testimonial = [
   {
     description:
-      "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos",
-    name: "Client Name",
-    profession: "Profession",
+      "The boat ride significantly cut down my commute time, bypassing city traffic and providing a relaxing start and end to my workday. Highly efficient and enjoyable.",
+    name: "Pasinduni Pabasara",
+    profession: "Teacher",
     icon: (
       <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
     ),
@@ -250,23 +241,23 @@ export const testimonial = [
   },
   {
     description:
-      "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos",
-    name: "Client Name",
-    profession: "Profession",
+      "I appreciate efficiency in all aspects of my life, and this boat service has been a game changer for my daily commute. This efficiency boosts my productivity and enhances my daily routine.",
+    name: "Randil Dulakna",
+    profession: "Software Engineer",
     icon: (
       <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
     ),
-    img: "../assets/img/testimonial-2.jpg",
+    img: "../assets/img/testimonial-1.jpg",
   },
   {
     description:
-      "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos",
-    name: "Client Name",
-    profession: "Profession",
+      "It's offering a swift and scenic route that avoids traffic and saves time. It's a stress-free way to start and end the workday, boosting my productivity.",
+    name: "Gayani Wanninayake",
+    profession: "Project Manager",
     icon: (
       <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
     ),
-    img: "../assets/img/testimonial-3.jpg",
+    img: "../assets/img/testimonial-1.jpg",
   },
 ];
 
@@ -374,7 +365,7 @@ export const boatItems2 = [
   },
 ];
 
-export const facility_Tours = [
+export const Leisure_Tours = [
   [
     {
       icon: <i class="fa-solid fa-user text-primary me-2"></i>,
@@ -422,7 +413,7 @@ export const facility_Tours = [
   ],
 ];
 
-export const facility_Diyathma = [
+export const Diyathma = [
   [
     {
       icon: <i class="fa-solid fa-user text-primary me-2"></i>,

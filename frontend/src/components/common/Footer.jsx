@@ -1,25 +1,27 @@
 import { Link } from "react-router-dom";
 import { footerContact, footerItem, socialIcons } from "../data/Data";
-import Newsletter from "../home/Newsletter";
 
 export default function Footer() {
   return (
     <>
-      <Newsletter />
       <div
         className="container-fluid bg-dark text-light footer wow fadeIn"
         data-wow-delay="0.1s"
+        style={{ marginTop: "7rem" }}
       >
         <div className="container pb-5">
           <div className="row g-5">
             <div className="col-md-6 col-lg-4">
               <div className="bg-primary rounded p-4">
                 <Link to="/">
-                  <h1 className="text-white text-uppercase mb-3">Hotelier</h1>
+                  <h1 className="text-white text-uppercase mb-3">
+                    LRDC Boat Service
+                  </h1>
                 </Link>
                 <p className="text-white mb-0">
-                  Build a professional website for your hotel business and grab
-                  the attention of new visitors upon your site’s launch.
+                  LRDC Boat Service offers a 20-minute canal commute in Colombo,
+                  with stops at key locations and maintained by retired Navy
+                  personnel.
                 </p>
               </div>
             </div>
@@ -33,8 +35,14 @@ export default function Footer() {
                 </p>
               ))}
               <div className="d-flex pt-2">
-                {socialIcons.slice(0, 4).map((val, index) => (
-                  <a className="btn btn-outline-light btn-social" href="">
+                {socialIcons.slice(0, 5).map((val, index) => (
+                  <a
+                    key={index}
+                    href={val.url}
+                    className="btn btn-outline-light btn-social"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {val.icon}
                   </a>
                 ))}
