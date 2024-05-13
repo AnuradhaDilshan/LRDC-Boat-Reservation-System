@@ -20,11 +20,11 @@ export default function About() {
               </h2>
               <p className="mb-4">
                 The "LRDC Boat Service," initiated by President Gotabhaya
-                Rajapaksa, led by RAdm (Rtd) H.R. Amaraweera WV, RWP, RSP, VSV,
-                RCDS (UK), Managing Director of LRDC Services (Pvt) Ltd, and now
-                overseen by Hon. Prasanna Ranatunga, M.P., Minister of Urban
-                Development and Housing and Chief Government Whip, promises a
-                rejuvenating experience on Colombo's waterways.
+                Rajapaksa, now overseen by Hon. Prasanna Ranatunga, M.P.,
+                Minister of Urban Development and Housing and Chief Government
+                Whip, and led by RAdm (Rtd) H.R. Amaraweera WV, RWP, RSP, VSV,
+                RCDS (UK), Managing Director of LRDC Services (Pvt) Ltd,
+                promises a rejuvenating experience on Colombo's waterways.
               </p>
               <p className="mb-4">
                 Designed for pure relaxation and enjoyment, this venture focuses
