@@ -20,12 +20,20 @@ export default function About() {
               </h2>
               <p className="mb-4">
                 The "LRDC Boat Service," initiated by President Gotabhaya
-                Rajapaksa, offers a new transport option through Colombo's
-                canals to avoid city traffic. The service runs from Wellawatte
-                to Battaramulla in just 20 minutes with stops at Havelock Town
-                and near the Open University of Sri Lanka. Operated by retired
-                Navy personnel, the service prioritizes safety and hygiene,
-                especially considering Covid-19 precautions.
+                Rajapaksa, led by RAdm (Rtd) H.R. Amaraweera WV, RWP, RSP, VSV,
+                RCDS (UK), Managing Director of LRDC Services (Pvt) Ltd, and now
+                overseen by Hon. Prasanna Ranatunga, M.P., Minister of Urban
+                Development and Housing and Chief Government Whip, promises a
+                rejuvenating experience on Colombo's waterways.
+              </p>
+              <p className="mb-4">
+                Designed for pure relaxation and enjoyment, this venture focuses
+                on providing fun-filled tours and mind-relaxing excursions. With
+                a dedicated emphasis on leisure, passengers can unwind amidst
+                picturesque surroundings, leaving the stresses of city life far
+                behind. Whether it's a scenic journey or simply basking in the
+                tranquil ambiance, the LRDC Boat Service offers an immersive
+                escape, where every moment is filled with joy and serenity.
               </p>
               <div className="row g-3 pb-4">
                 {about.map((item, key) => (
