@@ -36,7 +36,7 @@ export default function Booking() {
 
   const [formData, setFormData] = useState({
     name: "",
-    nic: "",
+    // nic: "",
     telNum: "",
     date: "",
     time: "",
@@ -49,7 +49,7 @@ export default function Booking() {
 
   const [errors, setErrors] = useState({
     name: "",
-    nic: "",
+    // nic: "",
     telNum: "",
   });
 
@@ -71,9 +71,9 @@ export default function Booking() {
           setErrors((prev) => ({ ...prev, name: "" }));
         }
         break;
-      case "nic":
-        handleNicChange(value);
-        break;
+      // case "nic":
+      //   handleNicChange(value);
+      //   break;
       case "telNum":
         handlePhoneChange(value);
         break;
@@ -82,21 +82,21 @@ export default function Booking() {
     }
   };
 
-  const handleNicChange = (inputValue) => {
-    const pattern1 = /^[0-9]{9}[xXvV]$/;
-    const pattern2 = /^[0-9]{12}$/;
-    if (
-      inputValue.trim() !== "" &&
-      !(pattern1.test(inputValue) || pattern2.test(inputValue))
-    ) {
-      setErrors((prev) => ({
-        ...prev,
-        nic: "NIC must be either 9 numbers followed by 'X' or 'V' or 12 numbers.",
-      }));
-    } else {
-      setErrors((prev) => ({ ...prev, nic: "" }));
-    }
-  };
+  // const handleNicChange = (inputValue) => {
+  //   const pattern1 = /^[0-9]{9}[xXvV]$/;
+  //   const pattern2 = /^[0-9]{12}$/;
+  //   if (
+  //     inputValue.trim() !== "" &&
+  //     !(pattern1.test(inputValue) || pattern2.test(inputValue))
+  //   ) {
+  //     setErrors((prev) => ({
+  //       ...prev,
+  //       nic: "NIC must be either 9 numbers followed by 'X' or 'V' or 12 numbers.",
+  //     }));
+  //   } else {
+  //     setErrors((prev) => ({ ...prev, nic: "" }));
+  //   }
+  // };
 
   const handlePhoneChange = (inputValue) => {
     const phoneNumber = inputValue.replace(/\D/g, "");
@@ -112,6 +112,7 @@ export default function Booking() {
         "076",
         "077",
         "078",
+        "037",
       ];
       if (
         !allowedPrefixes.some((prefix) => phoneNumber.startsWith(prefix)) ||
@@ -120,7 +121,7 @@ export default function Booking() {
         setErrors((prev) => ({
           ...prev,
           telNum:
-            "Phone number must start with one of [070, 071, 072, 074, 075, 076, 077, 078] and contain 10 digits.",
+            "Phone number must start with one of [070, 071, 072, 074, 075, 076, 077, 078,037] and contain 10 digits.",
         }));
       } else {
         setErrors((prev) => ({ ...prev, telNum: "" }));
@@ -203,7 +204,7 @@ export default function Booking() {
                 {errors.name}
               </div>
             )}
-            <input
+            {/* <input
               type="text"
               name="nic"
               className="form-control datetimepicker-input"
@@ -216,7 +217,7 @@ export default function Booking() {
               <div className="error" style={errorStyle}>
                 {errors.nic}
               </div>
-            )}
+            )} */}
             <input
               type="text"
               name="telNum"
