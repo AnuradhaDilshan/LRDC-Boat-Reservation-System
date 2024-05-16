@@ -9,6 +9,7 @@ export default function Booking() {
   const { type, index } = useParams();
   const packageIndex = parseInt(index);
   const [minDate, setMinDate] = useState(new Date().toISOString().slice(0, 10));
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   function formatTypeName(typeName) {
     return typeName.replace(/_/g, " ");
@@ -142,7 +143,8 @@ export default function Booking() {
         ride: "",
         note: "",
       });
-      navigate("/");
+      setShowConfirmation(true);
+      // navigate("/");
     } catch (error) {
       console.error("Error saving booking:", error);
     }
@@ -256,6 +258,20 @@ export default function Booking() {
             >
               Submit
             </button>
+            {showConfirmation && (
+              <div className="confirmation-popup">
+                <p>Booking places successfully. Boat admin will call you.</p>
+                <p>Contact number: 070 4170199</p>
+                <button
+                  onClick={() => {
+                    setShowConfirmation(false);
+                    navigate("/");
+                  }}
+                >
+                  Close
+                </button>
+              </div>
+            )}
           </form>
         </div>
       </div>
