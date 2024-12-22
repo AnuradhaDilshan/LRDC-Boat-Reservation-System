@@ -66,6 +66,25 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Footer Bottom Section */}
+        <div className="container py-4" style={{ borderTop: "1px solid #444" }}>
+          <div className="row justify-content-center">
+            <div className="col-12 text-center text-light">
+              <p className="mb-0">
+                © All Rights Reserved | LRDC Services (Pvt) Limited |{" "}
+                <a
+                  href="https://web.facebook.com/permalink.php/?story_fbid=122122260446227229&id=61556816875145&_rdc=1&_rdr#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-light text-decoration-none"
+                >
+                  Developed by DeshCode IT Solutions
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
