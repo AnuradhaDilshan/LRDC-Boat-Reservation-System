@@ -196,7 +196,7 @@ export const footerContact = [
   },
   {
     icon: <i className="fa fa-phone-alt me-3"></i>,
-    name: "070 471 0199 / 070 238 4766",
+    name: "070 471 0199(Damith) / 070 238 4766(Umanga)",
   },
   {
     icon: <i className="fa fa-envelope me-3"></i>,
