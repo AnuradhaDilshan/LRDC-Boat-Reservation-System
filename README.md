@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# LRDC Boat Reservation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFA000?style=flat&logo=firebase&logoColor=white)
 
-## Available Scripts
+A web-based reservation system built for LRDC Services (Pvt) Ltd to digitize and streamline boat ride bookings. Designed for efficient scheduling and a conflict-free booking calendar, the system simplifies ride slot management with a user-friendly interface.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Boat Ride Reservation**: Create and manage ride bookings with real-time availability.
+- **Dynamic Scheduling**: Conflict-free calendar for ride scheduling.
+- **Responsive Design**: Fully responsive UI for compatibility across devices.
+- **Firebase Integration**: Real-time database for storing booking data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## File Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project structure is as follows:
 
-### `npm test`
+```bash
+LRDC-Boat-Reservation-System/
+├── public/
+│   ├── assets/
+│   │   └── img/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Header.jsx
+│   │   │   └── SocialIcons.jsx
+│   │   ├── data/
+│   │   │   └── Data.jsx
+│   │   └── home/
+│   │       ├── About.js
+│   │       ├── Booking.js
+│   │       ├── Carousel.js
+│   │       ├── Rides.js
+│   │       └── Service.js
+│   ├── css/
+│   │   ├── animate.css
+│   │   ├── bootstrap.min.css
+│   │   ├── booking.css
+│   │   └── style.css
+│   ├── pages/
+│   │   ├── BookingPage.js
+│   │   ├── RidesPage.js
+│   │   ├── ServicesPage.js
+│   │   └── ContactPage.js
+│   ├── App.css
+│   ├── App.js
+│   ├── firebase.js
+│   └── index.js
+├── .env
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run the Project
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v16 or higher)
+- npm or yarn
+- Firebase account for database setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/AnuradhaDilshan/LRDC-Boat-Reservation-System.git
+   cd LRDC-Boat-Reservation-System
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Set up Firebase:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Create a Firebase project and enable Firestore.
 
-## Learn More
+   - Create a `.env` file in the file directory with the following variables:
+     ```env
+     FIREBASE_API_KEY = your_api_key
+     FIREBASE_AUTH_DOMAIN = your_project.firebaseapp.com
+     FIREBASE_PROJECT_ID = your_project_id
+     FIREBASE_STORAGE_BUCKET = your_project.appspot.com
+     FIREBASE_MESSAGING_SENDER_ID = your_sender_id
+     FIREBASE_APP_ID = your_app_id
+     FIREBASE_MEASUREMENT_ID = your measurement_id
+     ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Running the Project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+## Live Website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The LRDC Boat Reservation System is live at: [https://www.lrdcboatservice.com/](https://www.lrdcboatservice.com/)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Last Commit](https://img.shields.io/github/last-commit/AnuradhaDilshan/LRDC-Boat-Reservation-System)
+![Repo Size](https://img.shields.io/github/repo-size/AnuradhaDilshan/LRDC-Boat-Reservation-System)
+![Top Language](https://img.shields.io/github/languages/top/AnuradhaDilshan/LRDC-Boat-Reservation-System)
