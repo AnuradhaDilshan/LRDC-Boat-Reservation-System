@@ -98,7 +98,7 @@ LRDC-Boat-Reservation-System/
      FIREBASE_MEASUREMENT_ID = your_measurement_id
      ```
 
-4. Running the Project
+4. Running the Project:
 
    ```bash
    npm start
