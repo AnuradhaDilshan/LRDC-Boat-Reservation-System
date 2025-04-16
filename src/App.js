@@ -4,6 +4,7 @@ import "./css/bootstrap.min.css";
 import "./css/animate.css";
 import "./css/animate.min.css";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/common/Header";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import {
@@ -35,6 +36,7 @@ export default function App() {
           </Routes>
           <Footer />
         </Router>
+        <Analytics />
       </div>
     </>
   );

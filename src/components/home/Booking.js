@@ -9,6 +9,7 @@ export default function Booking() {
   const { type, index } = useParams();
   const packageIndex = parseInt(index);
   const [minDate, setMinDate] = useState(new Date().toISOString().slice(0, 10));
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   function formatTypeName(typeName) {
     return typeName.replace(/_/g, " ");
@@ -36,7 +37,6 @@ export default function Booking() {
 
   const [formData, setFormData] = useState({
     name: "",
-    nic: "",
     telNum: "",
     date: "",
     time: "",
@@ -49,8 +49,9 @@ export default function Booking() {
 
   const [errors, setErrors] = useState({
     name: "",
-    nic: "",
     telNum: "",
+    adults: "",
+    date: "",
   });
 
   const handleChange = (e) => {
@@ -71,60 +72,34 @@ export default function Booking() {
           setErrors((prev) => ({ ...prev, name: "" }));
         }
         break;
-      case "nic":
-        handleNicChange(value);
-        break;
       case "telNum":
         handlePhoneChange(value);
+        break;
+      case "date":
+        if (!value) {
+          setErrors((prev) => ({ ...prev, date: "Please select a date." }));
+        } else {
+          setErrors((prev) => ({ ...prev, date: "" }));
+        }
         break;
       default:
         break;
     }
   };
 
-  const handleNicChange = (inputValue) => {
-    const pattern1 = /^[0-9]{9}[xXvV]$/;
-    const pattern2 = /^[0-9]{12}$/;
-    if (
-      inputValue.trim() !== "" &&
-      !(pattern1.test(inputValue) || pattern2.test(inputValue))
-    ) {
+  const handlePhoneChange = (inputValue) => {
+    if (inputValue.trim() === "") {
       setErrors((prev) => ({
         ...prev,
-        nic: "NIC must be either 9 numbers followed by 'X' or 'V' or 12 numbers.",
+        telNum: "Please enter the telephone number.",
+      }));
+    } else if (!/^\d{10,}$/.test(inputValue)) {
+      setErrors((prev) => ({
+        ...prev,
+        telNum: "Telephone number should contain at least 10 numbers.",
       }));
     } else {
-      setErrors((prev) => ({ ...prev, nic: "" }));
-    }
-  };
-
-  const handlePhoneChange = (inputValue) => {
-    const phoneNumber = inputValue.replace(/\D/g, "");
-    if (inputValue.trim() === "") {
       setErrors((prev) => ({ ...prev, telNum: "" }));
-    } else {
-      const allowedPrefixes = [
-        "070",
-        "071",
-        "072",
-        "074",
-        "075",
-        "076",
-        "077",
-        "078",
-      ];
-      if (
-        !allowedPrefixes.some((prefix) => phoneNumber.startsWith(prefix)) ||
-        phoneNumber.length !== 10
-      ) {
-        setErrors((prev) => ({
-          ...prev,
-          telNum:
-            "Phone number must start with one of [070, 071, 072, 074, 075, 076, 077, 078] and contain 10 digits.",
-        }));
-      } else {
-        setErrors((prev) => ({ ...prev, telNum: "" }));
-      }
     }
   };
 
@@ -159,7 +134,6 @@ export default function Booking() {
       await setDoc(doc(firestore, "Dates", dateFormatted), updatedFormData);
       setFormData({
         name: "",
-        nic: "",
         telNum: "",
         date: "",
         time: "",
@@ -169,7 +143,8 @@ export default function Booking() {
         ride: "",
         note: "",
       });
-      navigate("/");
+      setShowConfirmation(true);
+      // navigate("/");
     } catch (error) {
       console.error("Error saving booking:", error);
     }
@@ -203,20 +178,7 @@ export default function Booking() {
                 {errors.name}
               </div>
             )}
-            <input
-              type="text"
-              name="nic"
-              className="form-control datetimepicker-input"
-              value={formData.nic}
-              onChange={handleChange}
-              placeholder="NIC Number"
-              required
-            />
-            {errors.nic && (
-              <div className="error" style={errorStyle}>
-                {errors.nic}
-              </div>
-            )}
+
             <input
               type="text"
               name="telNum"
@@ -280,7 +242,36 @@ export default function Booking() {
               onChange={handleChange}
               placeholder="Describe your occasion"
             />
-            <button className="btn btn-dark w-100">Submit</button>
+            <button
+              className="btn btn-dark w-100"
+              disabled={
+                !formData.name ||
+                !formData.telNum ||
+                !formData.adults ||
+                !formData.date ||
+                !!errors.name ||
+                !!errors.telNum ||
+                !!errors.adults ||
+                !!errors.date
+              }
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+            {showConfirmation && (
+              <div className="confirmation-popup">
+                <p>Booking places successfully. Boat admin will call you.</p>
+                <p>Contact number: 070 4170199</p>
+                <button
+                  onClick={() => {
+                    setShowConfirmation(false);
+                    navigate("/");
+                  }}
+                >
+                  Close
+                </button>
+              </div>
+            )}
           </form>
         </div>
       </div>

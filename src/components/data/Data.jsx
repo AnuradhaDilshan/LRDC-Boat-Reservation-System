@@ -53,20 +53,14 @@ export const navList = [
 export const socialIcons = [
   {
     icon: <i className="fab fa-facebook-f"></i>,
-    url: "https://www.facebook.com/LRDCservices",
+    url: "https://web.facebook.com/LRDCBoatService",
   },
-  {
-    icon: <i className="fab fa-twitter"></i>,
-    url: "https://www.twitter.com/lrdcserv",
-  },
+
   {
     icon: <i className="fab fa-instagram"></i>,
     url: "https://www.instagram.com/lrdc.services/",
   },
-  {
-    icon: <i className="fab fa-linkedin-in"></i>,
-    url: "https://www.facebook.com/LRDCservices",
-  },
+
   {
     icon: <i className="fab fa-youtube"></i>,
     url: "https://www.youtube.com/channel/UC2mc_wj1bNlYUasVnQBFAgw",
@@ -202,7 +196,7 @@ export const footerContact = [
   },
   {
     icon: <i className="fa fa-phone-alt me-3"></i>,
-    name: "(+94) 112 861 948",
+    name: "070 471 0199(Damith) / 070 238 4766(Umanga)",
   },
   {
     icon: <i className="fa fa-envelope me-3"></i>,
@@ -325,14 +319,14 @@ export const boatItems2 = [
       <small class="fa fa-star text-primary"></small>,
     ],
     description:
-      "Discover the joy of the open water during the week, designed specifically for those who prefer a daily working, more busy peoples.",
+      "Escape the daily grind with our weekday boat ride, offering tranquility and breathtaking views. For just Rs. 15,000, you can enjoy a peaceful one-hour experience. Need more time? Add an extra hour for only Rs. 5,000. Unwind and recharge in the heart of nature!",
     yellowbtn: "View details",
     darkbtn: "book now",
   },
 
   {
     img: "../assets/img/boat-5.jpg",
-    price: "LKR 30,000",
+    price: "LKR 20,000",
     name: "WeekEnd Ride",
     star: [
       <small class="fa fa-star text-primary"></small>,
@@ -342,7 +336,7 @@ export const boatItems2 = [
       <small class="fa fa-star text-primary"></small>,
     ],
     description:
-      "Make your weekends unforgettable, designed for thrill-seekers and leisure lovers alike. This vibrant escape is perfect for families, friends.",
+      "Treat yourself to an unforgettable weekend getaway with our premium boat ride package. For Rs. 20,000, enjoy a luxurious one-hour journey, surrounded by stunning views and calm waters. Want to extend the relaxation? Additional hours are just Rs. 5,000.",
     yellowbtn: "View details",
     darkbtn: "book now",
   },
@@ -359,7 +353,7 @@ export const boatItems2 = [
       <small class="fa fa-star text-primary"></small>,
     ],
     description:
-      "Turn the water into your party playground, specially designed for celebrations of all kinds. Whether you're hosting a fun gathering.",
+      "Step aboard and experience the charm of our boat with the Alongside Visit package for Rs. 10,000. Explore the boat up close, enjoy its beauty, and take in the serene waters surrounding it. Perfect for those looking to indulge in a unique and relaxing experience.",
     yellowbtn: "View details",
     darkbtn: "book now",
   },
@@ -422,7 +416,7 @@ export const Diyathma = [
     },
     {
       icon: <i class="fa-solid fa-wind text-primary me-2"></i>,
-      facility: "A / C",
+      facility: "A/C",
     },
     {
       icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
@@ -437,7 +431,7 @@ export const Diyathma = [
     },
     {
       icon: <i class="fa-solid fa-wind text-primary me-2"></i>,
-      facility: "A / C",
+      facility: "A/C",
     },
     {
       icon: <i class="fa-regular fa-clock text-primary me-2"></i>,
@@ -452,7 +446,7 @@ export const Diyathma = [
     },
     {
       icon: <i class="fa-solid fa-wind text-primary me-2"></i>,
-      facility: "A / C",
+      facility: "A/C",
     },
   ],
 ];

@@ -1,0 +1,49 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 10px;
+}
+
+.booking-form input,
+.booking-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.booking-form button {
+  background-color: #fea116;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 1px 50px rgba(21, 21, 21, 0.525);
+}
+
+.confirmation-popup p {
+  margin: 10px 0;
+}
+
+.confirmation-popup button {
+  background-color: #ff8800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.confirmation-popup button:hover {
+  background-color: #844907;
+}
