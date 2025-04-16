@@ -95,7 +95,7 @@ LRDC-Boat-Reservation-System/
      FIREBASE_STORAGE_BUCKET = your_project.appspot.com
      FIREBASE_MESSAGING_SENDER_ID = your_sender_id
      FIREBASE_APP_ID = your_app_id
-     FIREBASE_MEASUREMENT_ID = your measurement_id
+     FIREBASE_MEASUREMENT_ID = your_measurement_id
      ```
 
 4. Running the Project
